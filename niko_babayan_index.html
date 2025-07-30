@@ -6,70 +6,148 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Нико Бабаян — Digital-предприниматель</title>
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
   body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fff;
-    color: #111;
-    max-width: 600px;
-    margin: 40px auto;
-    padding: 0 20px;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #fff;
+    color: #2c2c2c;
     line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
-  h1 {
+  .container {
+    max-width: 700px;
+    margin: 50px auto 70px;
+    padding: 0 20px;
+  }
+  header {
     text-align: center;
-    color: #4B0082;
+    margin-bottom: 40px;
   }
-  h2 {
-    color: #4B0082;
-    border-bottom: 2px solid #4B0082;
-    padding-bottom: 6px;
+  header h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    color: #5b2ca6;
+    margin: 0;
+    letter-spacing: 0.03em;
   }
-  a {
-    color: #4B0082;
+  header p.birthdate {
+    margin: 6px 0 0;
+    color: #888;
+    font-style: italic;
+    font-size: 1rem;
+  }
+  section.bio {
+    margin-bottom: 40px;
+  }
+  section.bio h2 {
+    color: #5b2ca6;
+    border-bottom: 3px solid #5b2ca6;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
+  section.bio p {
+    font-size: 1.1rem;
+    color: #444;
+  }
+  section.contacts h2 {
+    color: #5b2ca6;
+    border-bottom: 3px solid #5b2ca6;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
+  ul.contacts-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+  }
+  ul.contacts-list li {
+    margin-bottom: 14px;
+    font-size: 1.1rem;
+  }
+  ul.contacts-list a {
+    color: #5b2ca6;
     text-decoration: none;
+    transition: color 0.3s ease;
   }
-  a:hover {
+  ul.contacts-list a:hover {
+    color: #8f5fde;
     text-decoration: underline;
   }
-  .button-telegram {
-    display: block;
-    background-color: #4B0082;
-    color: white;
-    width: fit-content;
-    padding: 10px 20px;
-    margin: 20px auto;
-    border-radius: 6px;
+  .btn-telegram {
+    display: inline-block;
+    background-color: #5b2ca6;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    box-shadow: 0 6px 12px rgba(91,44,166,0.4);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  .btn-telegram:hover {
+    background-color: #8f5fde;
+    box-shadow: 0 8px 18px rgba(143,95,222,0.5);
+  }
+  footer {
     text-align: center;
-    font-weight: bold;
-    box-shadow: 0 4px 10px rgba(75,0,130,0.3);
-    transition: background-color 0.3s ease;
+    margin-top: 80px;
+    font-size: 0.9rem;
+    color: #aaa;
   }
-  .button-telegram:hover {
-    background-color: #6a52a2;
-  }
-  ul {
-    padding-left: 20px;
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 2.2rem;
+    }
+    section.bio h2, section.contacts h2 {
+      font-size: 1.4rem;
+    }
+    .btn-telegram {
+      padding: 12px 22px;
+      font-size: 1rem;
+    }
   }
 </style>
 </head>
 <body>
-  <h1>Нико Бабаян</h1>
-  <p><em>(род. 2008, Армения)</em></p>
-  <h2>О себе</h2>
-  <p><strong>Нико Бабаян</strong> — армянский digital-предприниматель, автор Telegram-каналов формата «Ищу тебя», веб-разработчик, AI-энтузиаст и креативный продюсер. Наиболее известен благодаря созданию локальных Telegram-комьюнити и оригинальному подходу к продвижению в digital-среде.</p>
-  <h2>Контакты и проекты</h2>
-  <ul>
-    <li>Telegram: <a href="https://t.me/nikoitt" target="_blank">@nikoitt</a></li>
-    <li>Каналы:
-      <ul>
-        <li><a href="https://t.me/ishutebyatverr" target="_blank">Ищу тебя Тверь</a></li>
-        <li><a href="https://t.me/nikotver" target="_blank">Niko Tver</a></li>
-        <li><a href="https://t.me/nizhnevartovsk_dtp" target="_blank">Ищу тебя Нижневартовск</a></li>
-        <li><a href="https://t.me/ishutebyakrasnoyarsk" target="_blank">Ищу тебя Красноярск</a></li>
+  <div class="container">
+    <header>
+      <h1>Нико Бабаян</h1>
+      <p class="birthdate">Родился 21 марта 2008 года</p>
+    </header>
+
+    <section class="bio">
+      <h2>О себе</h2>
+      <p><strong>Нико Бабаян</strong> — армянский digital-предприниматель, автор Telegram-каналов формата «Ищу тебя», веб-разработчик, AI-энтузиаст и креативный продюсер. Известен благодаря созданию локальных Telegram-комьюнити и оригинальному подходу к продвижению в digital-среде.</p>
+      <p>Занимается запуском и развитием Telegram-проектов, веб-разработкой и использованием искусственного интеллекта для автоматизации и создания контента.</p>
+    </section>
+
+    <section class="contacts">
+      <h2>Контакты и проекты</h2>
+      <ul class="contacts-list">
+        <li>Telegram: <a href="https://t.me/nikoitt" target="_blank" rel="noopener noreferrer">@nikoitt</a></li>
+        <li>Каналы:
+          <ul>
+            <li><a href="https://t.me/ishutebyatverr" target="_blank" rel="noopener noreferrer">Ищу тебя Тверь</a></li>
+            <li><a href="https://t.me/nikotver" target="_blank" rel="noopener noreferrer">Niko Tver</a></li>
+            <li><a href="https://t.me/nizhnevartovsk_dtp" target="_blank" rel="noopener noreferrer">Ищу тебя Нижневартовск</a></li>
+            <li><a href="https://t.me/ishutebyakrasnoyarsk" target="_blank" rel="noopener noreferrer">Ищу тебя Красноярск</a></li>
+          </ul>
+        </li>
+        <li>Бот по продажам: <a href="https://t.me/niko_st_bot" target="_blank" rel="noopener noreferrer">Niko ST Bot</a></li>
       </ul>
-    </li>
-    <li>Бот по продажам: <a href="https://t.me/niko_st_bot" target="_blank">Niko ST Bot</a></li>
-  </ul>
-  <a href="https://t.me/nikoitt" target="_blank" class="button-telegram">Написать в Telegram</a>
+      <a href="https://t.me/nikoitt" target="_blank" rel="noopener noreferrer" class="btn-telegram">Написать в Telegram</a>
+    </section>
+
+    <footer>
+      &copy; 2025 Нико Бабаян
+    </footer>
+  </div>
 </body>
 </html>
